@@ -1,174 +1,56 @@
-/* style.css */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-}
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
-}
-
-.logo {
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-}
-
-.nav-links a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.nav-links a:hover {
-    text-decoration: underline;
-}
-
-.cart {
-    color: #fff;
-    font-weight: bold;
-}
-
-.hero-section {
-    text-align: center;
-    padding: 50px 20px;
-    background: linear-gradient(to right, #ff6f61, #fcb045);
-    color: white;
-}
-
-.hero-section .btn {
-    padding: 10px 20px;
-    background-color: white;
-    color: #ff6f61;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.hero-section .btn:hover {
-    background-color: #fcb045;
-    color: white;
-}
-
-.shop-section {
-    padding: 20px;
-    background-color: white;
-}
-
-.products {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-}
-
-.product-card {
-    text-align: center;
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.product-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
-}
-
-.product-card img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.product-card h3 {
-    margin-top: 15px;
-    font-size: 1.2em;
-}
-
-.product-card p {
-    margin: 10px 0;
-    font-size: 1em;
-    font-weight: bold;
-}
-
-.product-card button {
-    padding: 10px 15px;
-    background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
-}
-
-.product-card button:hover {
-    background-color: #ff6f61;
-}
-
-.footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
-    margin-top: 20px;
-}
-
-
-.best-seller-section {
-    text-align: center;
-    margin: 40px 0;
-}
-.best-seller-products {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-.best-seller-card {
-    border: 1px solid #ddd;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 250px;
-}
-.best-seller-card img {
-    width: 100%;
-    height: 300px;
-    border-radius: 8px;
-}
-.best-seller-card h3 {
-    margin: 10px 0;
-}
-.best-seller-card p {
-    font-size: 18px;
-    color: #333;
-}
-.best-seller-card button {
-    background-color: #ff6600;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition:  0.3s;
-}
-.best-seller-card button:hover {
-    background-color: #e65c00;
-}
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #282c34;
+            font-family: Arial, sans-serif;
+        }
+        .calculator {
+            width: 320px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        .title {
+            font-size: 24px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .display {
+            width: 95%;
+            height: 60px;
+            font-size: 28px;
+            text-align: right;
+            border: none;
+            background-color: #f1f1f1;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            padding-right: 10px;
+        }
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+        .button {
+            padding: 20px;
+            font-size: 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #d9d9d9;
+        }
+        .button:active {
+            background-color: #bfbfbf;
+        }
+        .operator { background-color: #ff9500; color: white; }
+        .operator:active { background-color: #e08900; }
+        .equal { background-color: #28a745; color: white; font-size: 24px; }
+        .equal:active { background-color: #218838; }
+        .clear { background-color: #dc3545; color: white; }
+        .backspace { background-color: #6c757d; color: white; }
+    

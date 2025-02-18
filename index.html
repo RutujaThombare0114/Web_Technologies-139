@@ -3,92 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clothes Shopping</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
-        <h1 class="logo">Fashion Hub</h1>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#shop">Shop</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="cart">
-            <span>Cart: <span id="cart-count">0</span> items</span>
+    <div class="calculator">
+        <h2 class="title">Calculator</h2>
+        <input type="text" class="display" id="display" disabled>
+        <div class="buttons">
+            <button class="button clear" onclick="clearDisplay()">C</button>
+            <button class="button backspace" onclick="deleteLast()">⌫</button>
+            <button class="button operator" onclick="chooseOperation('%')">%</button>
+            <button class="button operator" onclick="chooseOperation('/')">/</button>
+            <button class="button" onclick="appendNumber('7')">7</button>
+            <button class="button" onclick="appendNumber('8')">8</button>
+            <button class="button" onclick="appendNumber('9')">9</button>
+            <button class="button operator" onclick="chooseOperation('*')">*</button>
+            <button class="button" onclick="appendNumber('4')">4</button>
+            <button class="button" onclick="appendNumber('5')">5</button>
+            <button class="button" onclick="appendNumber('6')">6</button>
+            <button class="button operator" onclick="chooseOperation('-')">-</button>
+            <button class="button" onclick="appendNumber('1')">1</button>
+            <button class="button" onclick="appendNumber('2')">2</button>
+            <button class="button" onclick="appendNumber('3')">3</button>
+            <button class="button operator" onclick="chooseOperation('+')">+</button>
+            <button class="button" onclick="appendNumber('.')">.</button>
+            <button class="button" onclick="appendNumber('0')">0</button>
+            
+            <button class="button equal" onclick="compute()">=</button>
+            <button class="button operator" onclick="chooseOperation('^')">^</button>
+
         </div>
-    </header>
-
-    <section id="home" class="hero-section">
-        <h2>Welcome to Fashion Hub</h2>
-        <p>Your one-stop shop for the latest trends and styles!</p>
-        <a href="#shop" class="btn">Shop Now</a>
-    </section>
-
-    <section id="best-seller" class="best-seller-section">
-        <h2>Best Sellers</h2>
-        <div class="best-seller-products">
-            <div class="best-seller-card">
-                <img src="lehenga.jpg" alt="Best Seller 1">
-                <h3>Trendy Hoodie</h3>
-                <p>$45.00</p>
-                <button class="add-to-cart" data-name="Trendy Hoodie" data-price="45">Add to Cart</button>
-            </div>
-
-            <div class="best-seller-card">
-                <img src="anarkali.jpg" alt="Best Seller 1">
-                <h3>Trendy Hoodie</h3>
-                <p>$45.00</p>
-                <button class="add-to-cart" data-name="Trendy Hoodie" data-price="45">Add to Cart</button>
-            </div>
-
-            <div class="best-seller-card">
-                <img src="saree.jpg" alt="Best Seller 1">
-                <h3>Trendy Hoodie</h3>
-                <p>$45.00</p>
-                <button class="add-to-cart" data-name="Trendy Hoodie" data-price="45">Add to Cart</button>
-            </div>
-
-            <div class="best-seller-card">
-                <img src="mastani.jpg" alt="Best Seller 2">
-                <h3>Elegant Dress</h3>
-                <p>$60.00</p>
-                <button class="add-to-cart" data-name="Elegant Dress" data-price="60">Add to Cart</button>
-            </div>
-        </div>
-    </section>
-
-    <section id="shop" class="shop-section">
-        <h2>Our Collection</h2>
-        <div class="products">
-            <div class="product-card">
-                <img src="./T-shirt.jpeg" alt="T-Shirt">
-                <h3>Stylish T-Shirt</h3>
-                <p>$20.00</p>
-                <button class="add-to-cart" data-name="Stylish T-Shirt" data-price="20">Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="./Jeans.jpeg" alt="Jeans">
-                <h3>Denim Jeans</h3>
-                <p>$35.00</p>
-                <button class="add-to-cart" data-name="Denim Jeans" data-price="35">Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="./Jacket.jpeg" alt="Jacket">
-                <h3>Casual Jacket</h3>
-                <p>$50.00</p>
-                <button class="add-to-cart" data-name="Casual Jacket" data-price="50">Add to Cart</button>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <p>&copy; 2025 Fashion Hub. All Rights Reserved.</p>
-    </footer>
-
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
